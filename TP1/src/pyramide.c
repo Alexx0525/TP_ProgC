@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int compteur = 5;
+    int n = 5;
 
-    for (int i = 1; i <= compteur; i++) {
-        for (int j = 1; j <= i; j++) {
-            if (i == 1 || i == compteur || j == 1 || j == i)
-                printf("* ");
-            else
-                printf("# ");
-        }
+    for (int i = 1; i <= n; i++) {
+        // espaces
+        for (int s = 1; s <= n - i; s++)
+            printf(" ");
+
+        // chiffres croissants
+        for (int j = 1; j <= i; j++)
+            printf("%d", j);
+
+        // chiffres décroissants
+        for (int j = i - 1; j >= 1; j--)
+            printf("%d", j);
+
         printf("\n");
     }
 
-    return 0;
+    printf("Pyramide terminée.\n");
 }
