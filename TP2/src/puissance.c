@@ -9,5 +9,4 @@ int main() {
     }
 
     printf("%d^%d = %d\n", a, b, result);
-    return 0;
 }
