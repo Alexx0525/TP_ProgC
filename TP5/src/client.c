@@ -82,7 +82,7 @@ int main()
   memset(&server_addr, 0, sizeof(server_addr));
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(PORT);
-  server_addr.sin_addr.s_addr = 10.0.27.4;
+  inet_pton(AF_INET, "10.0.27.4", &server_addr.sin_addr);
 
   // demande de connection au serveur
   int connect_status = connect(socketfd, (struct sockaddr *)&server_addr, sizeof(server_addr));
