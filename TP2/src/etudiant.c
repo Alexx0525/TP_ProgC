@@ -5,11 +5,11 @@
 
 int main() {
     char noms[TAILLE][LONGUEUR_MAX] = {
-        "Dupont", "Lemoine", "Marque", "Martin", "Bernard"
+        "Laudrin", "Macron", "Marque", "Martin", "Le blond"
     };
 
     char prenoms[TAILLE][LONGUEUR_MAX] = {
-        "Alice", "Jean", "Linh", "Sophie", "Thomas"
+        "Alex", "Gaby", "Thomas", "antoine", "Greg"
     };
 
     char adresses[TAILLE][LONGUEUR_MAX] = {
